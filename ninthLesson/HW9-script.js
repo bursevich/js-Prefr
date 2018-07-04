@@ -1,16 +1,14 @@
-
 function mid(a,b) {
- let c = (a + b)/2;
-  return c;
+  return (a + b)/2;;
 }
-
 console.log(mid(10,2));
 
+
 function pow(x,n) {
-  let y = Math.pow(x,n);
-  return y;
+  return Math.pow(x,n);
 }
-console.log(pow(3,4));
+console.log(pow(3,3));
+
 
 function powSecond(z,r) {
   let i = 0;
@@ -68,12 +66,11 @@ question();
 
 
 
-loopWhile(11,18);
+loopWhile(11,16);
 function loopWhile(f,e) {
   let a = f;
   while (a < e) {
-    let g = a % 2;
-    if ( g == 0 ) {
+    if ( a % 2 == 0 ) {
        a++;
     } else {
       console.log(a);
@@ -82,12 +79,11 @@ function loopWhile(f,e) {
   }
 }
 
-loopDoWhile(2,8);
+loopDoWhile(2,9);
 function loopDoWhile(s,t) {
   let j = s;
   do {
-    let g = j % 2;
-    if ( g == 0 ) {
+    if ( j % 2 == 0 ) {
     } else {
       console.log(j);
     }
@@ -95,11 +91,11 @@ function loopDoWhile(s,t) {
   } while (j <= t);
 }
 
-loopFor(2,10);
+
+loopFor(2,12);
 function loopFor(v,w) {
-  for (h=v; h<w; h++) {
-    let g = h % 2;
-    if ( g == 0) {}
+  for (h=v; h<=w; h++) {
+    if ( h % 2 == 0) {}
     else {
       console.log(h);
     }
