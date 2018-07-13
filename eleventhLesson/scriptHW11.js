@@ -22,6 +22,25 @@ function isInArray(arr, el){
 cl(modifyArr([1,2,3,4,5], 3, 'hello')); // [1,2,`hello`, 4, 5]
 cl( modifyArr([1,2,3,4,5,3], 3, `hello`));  // [1,2,`hello`, 4, 5, `hello`] 
 cl(  modifyArr([1,2,3,4,5], 6, `hello`) ); // “element 6 not found in array [1,2,3,4,5]”
+
+
+while(true){
+  if((i = arr.indexOf(el)) != -1){
+    arr.splice(i,1,newEl);
+    ch = true;
+  }else{
+    break;
+  }
+  }
+  if(ch){
+    return arr;
+  }else{
+    return element ${el} not found in array [${arr}]
+  }
+
+
+console.log(transformString(`my naMe is Alex name name`,`name`, `coolName`)); 
+//console.log(transformString(`my sUrNaMe is Ivanov`,`SURNAMES`, `name`));
  
 
  
